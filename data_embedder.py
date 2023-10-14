@@ -3,6 +3,7 @@ Developed by Aindriya Barua in November, 2021
 """
 
 import numpy as np
+import nltk
 
 import json
 import fasttext as ft
@@ -41,7 +42,7 @@ def write_embedded_data(data):
 
 
 def load_embedding_model():
-    ft_model = ft.load_model('cc.en.300.bin')
+    ft_model = ft.load_model('fastText/cc.en.300.bin')
     return ft_model
 
 
